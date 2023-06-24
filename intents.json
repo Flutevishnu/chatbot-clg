@@ -1,0 +1,127 @@
+{
+    "intents": [
+    {
+    "tag": "greeting",
+    "patterns": [
+    "Hi",
+    "Hello",
+    "Hey",
+    "Good morning",
+    "Good afternoon",
+    "Good evening"
+    ],
+    "responses": [
+    "Hello! How can I assist you today?",
+    "Hi there! How may I help you?",
+    "Hey! How can I be of service?",
+    "Greetings! How can I assist you?"
+    ]
+    },
+    {
+    "tag": "goodbye",
+    "patterns": [
+    "Goodbye",
+    "Bye",
+    "See you later",
+    "Take care",
+    "Farewell"
+    ],
+    "responses": [
+    "Goodbye! Have a great day!",
+    "Bye! Take care and see you soon.",
+    "See you later! Have a wonderful day!",
+    "Farewell! Take care and stay safe."
+    ]
+    },
+    {
+    "tag": "thanks",
+    "patterns": [
+    "Thank you",
+    "Thanks",
+    "Appreciate it",
+    "Grateful"
+    ],
+    "responses": [
+    "You're welcome! Happy to assist.",
+    "Glad I could help!",
+    "No problem! Always here to assist you.",
+    "You're welcome! Let me know if there's anything else I can do for you."
+    ]
+    },
+    {
+    "tag": "admissions",
+    "patterns": [
+    "How can I apply to the college?",
+    "What are the admission requirements?",
+    "Can you provide information about admissions?",
+    "Is there an application deadline?"
+    ],
+    "responses": [
+    "To apply to our college, you can visit our website and fill out the online application form.",
+    "The admission requirements vary based on the program you're interested in. You can find detailed information on our website or contact our admissions office.",
+    "Sure! Our admissions process involves submitting an application form, providing necessary documents, and meeting the eligibility criteria for the desired program.",
+    "The application deadline depends on the specific program and intake. It's recommended to check our website or contact our admissions office for the most up-to-date information."
+    ]
+    },
+    {
+    "tag": "programs",
+    "patterns": [
+    "What programs do you offer?",
+    "Can you tell me about the courses available?",
+    "Which fields of study are available at your college?",
+    "Do you have any specialized programs?"
+    ],
+    "responses": [
+    "We offer a wide range of programs in various fields such as Arts, Sciences, Business, Engineering, and more. You can find detailed information about our programs on our website.",
+    "Our college provides a diverse selection of courses, including but not limited to Business Administration, Computer Science, Psychology, Engineering, and Fine Arts.",
+    "We have programs in areas like Business, Education, Health Sciences, Technology, and many more. Feel free to explore our website for a comprehensive list of available programs.",
+    "Yes, we have specialized programs tailored to specific industries and professions. These programs offer in-depth training and hands-on experience in areas such as Culinary Arts, Graphic Design, Nursing, and Automotive Technology."
+    ]
+    },
+    {
+    "tag": "financial_aid",
+    "patterns": [
+    "What financial aid options are available?",
+    "Can I get scholarships or grants?",
+    "Do you offer any financial assistance?",
+    "Are there work-study opportunities?"
+    ],
+    "responses": [
+    "We provide various financial aid options, including scholarships, grants, and loans. Eligibility criteria and application processes may apply. You can find detailed information on our website or contact our financial aid office for more details.",
+    "Yes, we offer scholarships and grants to eligible students. We also have financial assistance programs and work-study opportunities. For specific information, I recommend visiting our website or reaching out to our financial aid office.",
+    "Financial aid options such as scholarships, grants, and loans are available to qualified students. We also have work-study programs that provide opportunities for part-time employment. To learn more about these options, please visit our website or contact our financial aid office.",
+    "We understand the importance of financial assistance. Our college offers a range of financial aid options, including scholarships, grants, and work-study programs. You can find detailed information on our website or speak with our financial aid office to explore the available opportunities."
+    ]
+    },
+    {
+    "tag": "campus_facilities",
+    "patterns": [
+    "What facilities does the campus have?",
+    "Tell me about the campus amenities",
+    "Are there sports facilities on campus?",
+    "Do you have a library?"
+    ],
+    "responses": [
+    "Our campus boasts state-of-the-art facilities, including modern classrooms, well-equipped laboratories, a library, sports facilities, student lounges, and recreational areas.",
+    "We take pride in our campus facilities, which include a spacious library, sports facilities such as a gymnasium and outdoor fields, computer labs, cafeteria, and comfortable study spaces.",
+    "Our campus offers a range of amenities for students, including a library with extensive resources, sports facilities for various activities, student clubs and organizations, and comfortable spaces to study and relax.",
+    "At our college, you'll find a variety of campus facilities, including a library stocked with a wide selection of books and digital resources, sports facilities for both indoor and outdoor activities, and communal spaces for socializing and studying."
+    ]
+    },
+    {
+    "tag": "academic_support",
+    "patterns": [
+    "Is there academic support available?",
+    "Do you provide tutoring services?",
+    "Are there resources to help students with their studies?",
+    "What kind of academic assistance is offered?"
+    ],
+    "responses": [
+    "Yes, we provide academic support to our students. We have tutoring services, study groups, and access to resources such as libraries and online databases to assist with studies.",
+    "We understand the importance of academic support. Our college offers tutoring services, study workshops, and resources like academic libraries and online platforms to help students succeed in their studies.",
+    "Academic support is readily available at our college. We have dedicated tutors, study resources, and academic advisors who provide guidance and assistance to students in various subjects and disciplines.",
+    "Rest assured, we offer comprehensive academic support. Students can access tutoring services, study materials, academic workshops, and guidance from faculty members and advisors to enhance their learning experience."
+    ]
+    }
+    ]
+    }
