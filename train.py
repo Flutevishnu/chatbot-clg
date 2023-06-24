@@ -29,7 +29,7 @@ tags = sorted(set(tags))
 # print(len(xy), "patterns")
 # print(len(tags), "tags:", tags)
 # print(len(all_words), "unique stemmed words:", all_words)
-count = 0 
+
 
 X_train = [] 
 y_train = []
@@ -108,3 +108,16 @@ for epoch in range(num_epochs):
 
 print(f'final loss: {loss.item():.4f}')
 
+data = {
+"model_state": model.state_dict(),
+"input_size": input_size,
+"hidden_size": hidden_size,
+"output_size": output_size,
+"all_words": all_words,
+"tags": tags
+}
+
+FILE = "Trained_model.pth"
+torch.save(data, FILE)
+
+print(f'training complete. file saved to {FILE}')
