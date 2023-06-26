@@ -82,3 +82,39 @@
     border: 0px;
     cursor: pointer;
 }
+
+.input 
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    
+} 
+
+.input input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.input button 
+{
+    width: 60px;
+    height: 40px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
