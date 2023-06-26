@@ -13,7 +13,6 @@ def predict():
     text = request.get_json().get("message")
     response = get_response(text)
     message = {"answer": response}
-    console.log(message)
     return jsonify(message)
 
 
