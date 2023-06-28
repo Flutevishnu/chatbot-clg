@@ -25,6 +25,8 @@ def store():
 
     store_data(name, email, mobile_number)
 
+    return jsonify({"status" : "success"})
+
 
 if __name__ == "__main__":
     app.run(debug=True)
