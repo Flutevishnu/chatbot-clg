@@ -5,8 +5,7 @@ import torch
 
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
-from flask import g 
-import sqlite3
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -29,11 +28,7 @@ model.eval()
 
 bot_name = "KLNCE"
 
-def store_data(name="", email="", mobile_number=""):
-    db = get_db()
-    cursor = db.cursor()
-    cursor.execute("INSERT INTO users (name, email, mobile_numer) VALUES (?, ?, ?)", (name, email, mobile_number))
-    db.commit()
+
 
 def get_response(msg):
      
@@ -58,19 +53,7 @@ def get_response(msg):
     
 
 
-Database = "chatbot.db"
 
-def get_db():
-    db = getattr(g, '_database', None)
-    if db is None:
-        db = g._database = sqlite3.connect(Database)
-    return db
-
-def create_user_table():
-    db = get_db()
-    curser = db.curser()
-    curser.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, monile_number number(10))")
-    db.commit()
     
 
 

@@ -31,8 +31,21 @@ class Chatbox {
         // show or hides the box
         if(this.state) {
             chatbox.classList.add('chatbox--active')
+            if(!this.hasuserinfo())
+            {
+                this.askName(chatbox);
+            }
         } else {
             chatbox.classList.remove('chatbox--active')
+        }
+    }
+
+    askName(chatbox)
+    {
+        const nameInput = prompt("please Enter your full name:");
+        if(nameInput !== null && nameInput.trim() !== "")
+        {
+            this.store_user(nameInput);
         }
     }
 
@@ -83,6 +96,32 @@ class Chatbox {
 
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
+    }
+
+    store_user(name)
+    {
+        const emailInput = prompt("please enter yout email:");
+        if(emailInput !== nul && emailInput.trim() !== "")
+        {
+            fetch('http://127.0.0.1:5000/store',{
+                method:'POST',
+                body: JSON.stringify({name:name, email: emailInput}),
+                mode: "cors",
+                headers:{'Content-Type': 'application/json'},
+            })
+            .then(response => {
+                if(response.ok){
+                    console.log("USER info stored succesfully.");
+                }
+                else{
+                    console.error("failes to store user information.");
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        
     }
 }
 
