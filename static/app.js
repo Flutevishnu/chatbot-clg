@@ -98,16 +98,18 @@ class Chatbox {
         chatmessage.innerHTML = html;
     }
 
-    store_user(name)
+    store_user(name1)
     {
         const emailInput = prompt("please enter yout email:");
-        if(emailInput !== nul && emailInput.trim() !== "")
+        if(emailInput !== null && emailInput.trim() !== "")
         {
-            fetch('http://127.0.0.1:5000/store',{
-                method:'POST',
-                body: JSON.stringify({name:name, email: emailInput}),
-                mode: "cors",
-                headers:{'Content-Type': 'application/json'},
+            fetch('http://127.0.0.1:5000/store', {
+                method: 'POST',
+                body: JSON.stringify({ name: name1, email: emailInput }),
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
             })
             .then(response => {
                 if(response.ok){
@@ -122,6 +124,11 @@ class Chatbox {
             });
         }
         
+    }
+
+    hasuserinfo()
+    {
+        return localStorage.getItem('name') !== null && localStorage.getitem('email') !== null;
     }
 }
 

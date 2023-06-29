@@ -18,7 +18,7 @@ def get_db():
 def create_user_table():
     db = get_db()
     cursor = db.cursor()
-    cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT, monile_number number(10))")
+    cursor.execute("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, email TEXT)")
     db.commit()
    
 @app.before_first_request
@@ -47,12 +47,13 @@ def store():
     data = request.get_json()
     name = data.get("name")
     email = data.get("email")
-    mobile_number = data.get("mobile_number")
 
     db = get_db()
     cursor = db.cursor()
-    cursor.execute("INSERT INTO users (name, email, mobile_numer) VALUES (?, ?, ?)", (name, email, mobile_number))
+    cursor.execute("INSERT INTO users (name, email) VALUES (?, ?)", (name, email))
     db.commit()
+
+    return jsonify({"status": "success"})
 
 
 
