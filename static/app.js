@@ -45,14 +45,32 @@ class Chatbox {
         }
     }
 
-    askName(chatbox)
+    askName(chatbox) 
     {
-        const nameInput = prompt("please Enter your full name:");
-        if(nameInput !== null && nameInput.trim() !== "")
+        let nameInput = prompt("Please enter your full name:");
+        
+    
+        if (nameInput !== null && nameInput.trim() !== "") 
         {
-            this.store_user(nameInput);
+          while (!/^[a-zA-Z]+$/.test(nameInput)) 
+          {
+            nameInput = prompt("Invalid name. Please enter a valid name containing only alphabets:");
+          }
+          let emailInput = prompt("Please enter your email:");
+          while (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(emailInput)) 
+          {
+            emailInput = prompt("Invalid email. Please enter a valid email address:");
+          }
+          let mobile = prompt("Please enter your mobile number:");
+          while (!/^\d{10}$/.test(mobile)) 
+          {
+            mobile = prompt("Invalid mobile number. Please enter a 10-digit number:");
+          }
+          this.store_user(nameInput, emailInput, mobile);
         }
-    }
+      }
+
+
 
     onSendButton(chatbox) {
         var textField = chatbox.querySelector('input');
@@ -103,14 +121,13 @@ class Chatbox {
         chatmessage.innerHTML = html;
     }
 
-    store_user(name1)
+    store_user(name1, emailInput, mobile1)
     {
-        const emailInput = prompt("please enter yout email:");
         if(emailInput !== null && emailInput.trim() !== "")
         {
             fetch('http://127.0.0.1:5000/store', {
                 method: 'POST',
-                body: JSON.stringify({ name: name1, email: emailInput }),
+                body: JSON.stringify({ name: name1, email: emailInput, mobile: mobile1 }),
                 mode: 'cors',
                 headers: {
                     'Content-Type': 'application/json'
