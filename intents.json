@@ -49,79 +49,607 @@
     ]
     },
     {
-    "tag": "admissions",
-    "patterns": [
-    "How can I apply to the college?",
-    "What are the admission requirements?",
-    "Can you provide information about admissions?",
-    "Is there an application deadline?"
+    "tag": "IT_Course_Accreditation",
+    "patterns":
+     [
+        "Is the Information Technology department accredited?",
+        "Has the IT department received any accreditation?",
+        "What is the accreditation status of the IT department?",
+        "Can you provide information about the IT course's accreditation status?",
+        "Has the IT course undergone the accreditation process?",
+        "Has the IT course received accreditation?",
+        "Is the IT course accredited?",
+        "Can you provide details about the IT course's accreditation?",
+        "Is the IT course accredited and approved?"
     ],
-    "responses": [
-    "To apply to our college, you can visit our website and fill out the online application form.",
-    "The admission requirements vary based on the program you're interested in. You can find detailed information on our website or contact our admissions office.",
-    "Sure! Our admissions process involves submitting an application form, providing necessary documents, and meeting the eligibility criteria for the desired program.",
-    "The application deadline depends on the specific program and intake. It's recommended to check our website or contact our admissions office for the most up-to-date information."
+        "responses":
+    [
+        "Yes, the Information Technology department is accredited by NBA.",
+        "The department has been accredited by NBA multiple times ",
+        "The NBA accreditation status of the department is valid until now"
     ]
     },
     {
-    "tag": "programs",
+        "tag": "IT_Infrastructure_Facilities",
+        "patterns":
+         [
+            "What are the facilities available in the IT department?",
+            "What are the facilities available in the Informatiom technology department?",
+            "What labs and equipment are present in the IT department?",
+            "What labs and facilities does the IT department have?",
+            "What facilities are there in the IT department?",
+            "Can you tell me about the labs and equipment available in IT?",
+            "Tell me about the infrastructure in the IT department"
+
+        ],
+            "responses":
+        [
+            "The department consists of several laboratories, including CASE TOOLS Lab, DBMS Lab, FOSS Lab, MPMC Lab, WiFi Lab, R&D Lab, and Networks Lab.",
+            
+            "The department consists of several laboratories, including CASE TOOLS Lab, DBMS Lab, FOSS Lab, MPMC Lab, WiFi Lab, R&D Lab, and Networks Lab and also equipped with computers, headphones, web cameras, and a library with a collection of over 1300 books."
+        ]
+    },
+{
+        "tag": "IT_Vision",
+        "patterns": [
+        "What is the vision of the Department of Information Technology?",
+        "Can you tell me about the IT department's vision?"
+        ],
+        "responses": [
+        "To emerge as a center of excellence through innovative technical education and research in Information Technology."
+        ]
+        },
+        {
+        "tag": "IT_Mission",
+        "patterns": [
+        "What is the mission of the Department of Information Technology?",
+        "Can you Tell me the IT department's mission?"
+        ],
+        "responses": [
+        "To produce competent Information Technology professionals to face the industrial and societal challenges by imparting quality education with ethical values."
+        ]
+        },
+    {
+        "tag": "IT_Student_Achievements",
+        "patterns": [
+        "Have the IT students achieved anything notable?",
+        "Can you tell me about the achievements of the IT students?",
+        "Are there any remarkable accomplishments by the IT students?",
+        "Have the IT students received any awards or recognition?",
+        "Tell me about the achievements of the IT students in the department."
+        ],
+        "responses": [
+        "Our students have excelled in their academic pursuits, with 53 University Rank Holders.",
+        "Our students have participated in and won prizes in various national and international events held in other colleges.",
+        "Many of our students have successfully completed remote project mentoring programs in reputed organizations.",
+        "The department organizes symposiums, national/international conferences, project exhibitions, workshops, and seminars to provide students with technical exposure.",
+        "Students have had the opportunity to visit industry organizations like ISRO, BSNL, Tata Consultancy Services, and more, and engage in industrial projects with companies such as InfoFace and Honeywell Technology Solutions."
+        ]
+        },
+        
+{
+    "tag": "IT PSOs",
     "patterns": [
-    "What programs do you offer?",
-    "Can you tell me about the courses available?",
-    "Which fields of study are available at your college?",
-    "Do you have any specialized programs?"
+    "What are the program-specific outcomes of the IT department?",
+    "Tell me about the PSOs of the IT department.",
+    "Tell me about the program-specific outcomes of the IT department.",
+    "What outcomes does the IT department aim to achieve?",
+    "Explain the goals of the IT department's programs."
     ],
     "responses": [
-    "We offer a wide range of programs in various fields such as Arts, Sciences, Business, Engineering, and more. You can find detailed information about our programs on our website.",
-    "Our college provides a diverse selection of courses, including but not limited to Business Administration, Computer Science, Psychology, Engineering, and Fine Arts.",
-    "We have programs in areas like Business, Education, Health Sciences, Technology, and many more. Feel free to explore our website for a comprehensive list of available programs.",
-    "Yes, we have specialized programs tailored to specific industries and professions. These programs offer in-depth training and hands-on experience in areas such as Culinary Arts, Graphic Design, Nursing, and Automotive Technology."
+    "The department has the following program-specific outcomes (PSOs) To Create a better learning environment in line with technological advancements research progress. and To Provide industry exposure through research and consultancy in Information and Communication Technologies."
+    ]
+},
+{
+    "tag": "IT_PEOs",
+    "patterns": [
+    "What are the IT program educational objectives of the department?",
+    "Tell me about the PEOs of the IT department.",
+    "What are the goals of the IT department's programs?",
+    "Explain the objectives of the IT department's programs."
+    ],
+    "responses": [
+    "The department has the following program educational objectives (PEOs) To Excel in industrial or graduate work in Information Technology and multi-disciplinary environments and To Adapt to ever-changing technologies by applying engineering principles.\n3. Practice professionalism, conforming to ethical values, teamwork, and leadership."
+    ]
+},
+{
+    "tag": "IT_Program Outcomes",
+    "patterns": [
+    "What are the program outcomes in the IT department?",
+    "Can you tell me about the outcomes of the IT program?",
+    "What skills and knowledge are covered by the IT program outcomes?"
+    ],
+    "responses": [
+    "The IT program outcomes (POs) include: engineering knowledge, problem analysis, design/development of solutions, investigations of complex problems, modern tool usage, societal impact assessment, environment and sustainability awareness, ethical practices, teamwork, effective communication, project management, and lifelong learning."
+    ]
+},
+{
+    "tag": "CSE Department Establishment",
+    "patterns": [
+    "When was the department CS established?",
+    "How did the CS department start?",
+    "Tell me about the CS department's beginnings."
+    ],
+    "responses": [
+    "The department of Computer Science and Engineering was established in 1997.",
+    "The department started its journey in 1997 with the aim of providing quality education in computer science and engineering.",
+    "In 1997, the department came into existence, laying the foundation for its contributions in the field of computer science and engineering.",
+    "Since its establishment in 1997, the department has grown and become a renowned institution in the field of computer science and engineering."
+    ]
+},
+    {
+    "tag": "CS_department_accreditation",
+    "patterns": [
+    "Is the CS department accredited by any authority?",
+    "Can you provide information about the CS department's accreditation?",
+    "Has the CS department received any accreditation?"
+    ],
+    "responses": [
+    "Yes, the CS department is accredited by the National Board of Accreditation (NBA).",
+    "The CS department has undergone accreditation by NBA, ensuring the quality and standards of the department.",
+    "The CS department holds accreditation from NBA, signifying its compliance with industry requirements."
     ]
     },
     {
-    "tag": "financial_aid",
+    "tag": "CS_accreditation_renewal",
     "patterns": [
-    "What financial aid options are available?",
-    "Can I get scholarships or grants?",
-    "Do you offer any financial assistance?",
-    "Are there work-study opportunities?"
+    "When was the CS department first accredited?",
+    "Has the accreditation of the CS department been renewed?",
+    "Can you provide details about the CS department's accreditation history?"
     ],
     "responses": [
-    "We provide various financial aid options, including scholarships, grants, and loans. Eligibility criteria and application processes may apply. You can find detailed information on our website or contact our financial aid office for more details.",
-    "Yes, we offer scholarships and grants to eligible students. We also have financial assistance programs and work-study opportunities. For specific information, I recommend visiting our website or reaching out to our financial aid office.",
-    "Financial aid options such as scholarships, grants, and loans are available to qualified students. We also have work-study programs that provide opportunities for part-time employment. To learn more about these options, please visit our website or contact our financial aid office.",
-    "We understand the importance of financial assistance. Our college offers a range of financial aid options, including scholarships, grants, and work-study programs. You can find detailed information on our website or speak with our financial aid office to explore the available opportunities."
+    "The CS department was first accredited in 2007 by NBA.",
+    "The CS department's accreditation has been renewed multiple times, with the latest renewal in 2019.",
+    "The CS department's accreditation status is periodically reviewed and renewed to maintain its quality standards."
     ]
     },
     {
-    "tag": "campus_facilities",
+    "tag": "CS_accreditation_validity",
     "patterns": [
-    "What facilities does the campus have?",
-    "Tell me about the campus amenities",
-    "Are there sports facilities on campus?",
-    "Do you have a library?"
+    "How long is the accreditation status of the CS department valid for?",
+    "Till when is the CS department's accreditation valid?",
+    "Can you tell me the validity period of the CS department's accreditation?"
     ],
     "responses": [
-    "Our campus boasts state-of-the-art facilities, including modern classrooms, well-equipped laboratories, a library, sports facilities, student lounges, and recreational areas.",
-    "We take pride in our campus facilities, which include a spacious library, sports facilities such as a gymnasium and outdoor fields, computer labs, cafeteria, and comfortable study spaces.",
-    "Our campus offers a range of amenities for students, including a library with extensive resources, sports facilities for various activities, student clubs and organizations, and comfortable spaces to study and relax.",
-    "At our college, you'll find a variety of campus facilities, including a library stocked with a wide selection of books and digital resources, sports facilities for both indoor and outdoor activities, and communal spaces for socializing and studying."
+    "The accreditation status granted to the CS department is valid until 30.06.2022.",
+    "The CS department's accreditation remains valid until the specified date of 30.06.2022.",
+    "The accreditation of the CS department is valid for the current cycle until 2022."
     ]
     },
     {
-    "tag": "academic_support",
+        "tag": "department_facilities",
+        "patterns": [
+        "What facilities are available in the department?",
+        "Can you tell me about the facilities provided in the department?",
+        "What are the resources available in the department?"
+        ],
+        "responses": [
+        "The department provides a range of facilities to enhance the learning experience of students and faculty members.",
+        "Our facilities include competent and experienced faculty members, with several holding doctorates and recognized research supervisors.",
+        "We have well-equipped laboratories, including Programming and Data Structures Laboratory, Advanced Computing Laboratory, Software Development and Simulation Laboratory, and Project Laboratory.",
+        "Additionally, we have a dedicated Research Laboratory for faculty members and students involved in research and consultancy.",
+        "The department boasts a well-stocked library, an exclusive seminar hall for technical events, and a Research Reading Hall for research scholars.",
+        "All our classrooms are equipped with smart teaching aids to support effective learning."
+        ]
+        },
+        {
+            "tag": "cs_vision",
+            "patterns": [
+            "What is the CS department's vision?",
+            "Tell me about the CS department's vision."
+            ],
+            "responses": [
+            "Our vision is to evolve in Computer Science & Engineering through sustainable technical education and innovative research, fostering competent professionals to serve and lead society."
+            ]
+            },
+            {
+            "tag": "cs_mission",
+            "patterns": [
+            "What is the CS department's mission?",
+            "Tell me about the CS department's mission."
+            ],
+            "responses": [
+            "Our mission is to provide demand-based proficient education, promote continuous learning through industry institution interaction, and cultivate professionalism, ethics, and integrity of character for positive contributions to society."
+            ]
+            },
+{
+                "tag": "program_educational_objectives",
+                "patterns": [
+                "What are the CS Program Educational Objectives?",
+                "Tell me about the CS program educational objectives."
+                ],
+                "responses": [
+                "The Program Educational Objectives (PEOs) of the Computer Science and Engineering program are to contribute effectively to society by applying principles of the field, sustain as competent professionals through career advancement and innovation, and build professionalism, teamwork, effective communication, ethical values, and leadership qualities."
+                ]
+ },
+ {
+    "tag": "CS program_specific_outcomes",
     "patterns": [
-    "Is there academic support available?",
-    "Do you provide tutoring services?",
-    "Are there resources to help students with their studies?",
-    "What kind of academic assistance is offered?"
+    "CS Program specific outcomes",
+    "Tell me about the CS Program specific outcomes"
     ],
     "responses": [
-    "Yes, we provide academic support to our students. We have tutoring services, study groups, and access to resources such as libraries and online databases to assist with studies.",
-    "We understand the importance of academic support. Our college offers tutoring services, study workshops, and resources like academic libraries and online platforms to help students succeed in their studies.",
-    "Academic support is readily available at our college. We have dedicated tutors, study resources, and academic advisors who provide guidance and assistance to students in various subjects and disciplines.",
-    "Rest assured, we offer comprehensive academic support. Students can access tutoring services, study materials, academic workshops, and guidance from faculty members and advisors to enhance their learning experience."
+    "The Program Specific Outcomes (PSOs) of our Computer Science and Engineering program include the ability to apply analytical, design, and implementation skills to solve scientific and business applications related to algorithms, computer systems, networks, security, data analytics, and artificial intelligence. Additionally, students will have the ability to continuously update their knowledge in areas such as virtualization, mobile application development, data visualization, machine learning, and technologies like storage, computing, and communication to meet industry requirements."
     ]
-    }
-    ]
-    }
+    },
+    {
+        "tag": "CS placement_details",
+        "patterns": [
+        "Tell me about the CS placement details",
+        "What are the CS placement statistics?",
+        "Can you provide information on CS placements?"
+        ],
+        "responses": [
+        "The placement details for the Computer Science and Engineering Department in recent years are as follows: From 2018 to 2022, out of a total of 103 final year students, 85 were placed in companies or government sectors, with 5 students opting for higher studies and none becoming entrepreneurs. Similar trends were observed in previous years, with varying numbers of students being placed, pursuing higher studies, and venturing into entrepreneurship. These statistics reflect the department's commitment to facilitating successful career opportunities and academic pursuits for its students."
+        ]
+        },
+        {
+            "tag": "IT placed_students_list",
+            "patterns": [
+            "Provide the count and names of companies that recruited students from the Previous IT batch",
+            "How many students were placed and in which companies for the Previous IT batch?",
+            "List the companies that recruited students from the Previous IT batch"
+            ],
+            "responses": [
+            "A total of 19 students were placed in various companies for the 2019-2023 batch. The companies include ZOHO Corporation Pvt., Ltd., Aptean India Pvt., Ltd., TCS, Data Pattern India Pvt., Ltd., Lucid Imaging, Recruit NXT, Shiash Info Solutions Pvt., Ltd., SMI Info Solutions, SOLARTIS, Futurus, Great Innovus, Solver Minds, Aakro Development Pvt., Ltd., Slusby Technologies Pvt., Ltd., and Mphasis."
+            ]
+            },
+            {"tag": "MECH_Course_Accreditation",
+            "patterns":
+             [
+                "Is the Mechanical  department accredited?",
+                "Has the department received any accreditation?",
+                "What is the accreditation status of the department?",
+                "Can you provide information about the course's accreditation status?",
+                "Has the course undergone the accreditation process?",
+                "Has the course received accreditation?",
+                "Is the course accredited?",
+                "Can you provide details about the course's accreditation?",
+                "Is the course accredited and approved?"
+            ],
+                "responses":[
+                "Yes, the Mechanical department is accredited by NBA.",
+                "The department has been accredited by NBA multiple times ",
+                "The NBA accreditation status of the department is valid until now"
+            ]
+        },  
+    {
+        "tag": "MECH_Infrastructure_Facilities",
+        "patterns":
+         [
+            "What are the facilities available in the MECH department?",
+            "What are the facilities available in the Mechanical  department?",
+            "What labs and equipment are present in the MECH department?",
+            "What labs and facilities does the Mechanical department have?",
+            "What facilities are there in the MECH department?",
+            "Can you tell me about the labs and equipment available in Mechanical?",
+            "Tell me about the infrastructure in the MECH department"
+
+        ],
+            "responses":
+        [
+            "The department consists of Well Equipped Laboratories such as CAD Lab, CAM Lab, Machine shop, Mechatronics Lab, Dynamics Lab, Strength of Materials Lab, Fluid Mechanics and Machinery Lab, Metrology and Measurement Lab, Internal Combustion Engines Lab, Steam Lab, Heat Transfer Lab, Industrial Practices Lab, Research & Development Lab and ISHRAE Showcase Lab.",
+            "The department consists of Latest Software’s such as WITNESS, CREO 3, ANSYS CFD 18.0, ANSYS FEA 18.0, ANSYS 12.0, Solid edge V16.0, Autodesk Inventor Series 5.0, Edge CAM 2013 R1, AutoCAD 2017etc. Smart Class rooms and Seminar Hall. Exclusive Department Library for more than 2,000 books .",
+            "The department consists of National Journals and ASME e-Journals. Utility of online open source tutorials like NPTEL, MOOC, Spoken Tutorial etc. Signed MoU With ISHRAE, ATPDC-CIPET, Madurai and 3D CADD Academy, Madurai."
+        ]
+    },
+    {
+        "tag": "MECHANICAL_Infrastructure_Facilities",
+        "patterns":
+         [
+            "What are the facilities available in the MECH department?",
+            "What are the facilities available in the Mechanical  department?",
+            "What labs and equipment are present in the MECH department?",
+            "What labs and facilities does the MECH department have?",
+            "What facilities are there in the MECH department?",
+            "Can you tell me about the labs and equipment available in MECH?",
+            "Tell me about the infrastructure in the MECH department"
+
+        ],
+            "responses":
+        [
+            "The department consists of Well Equipped Laboratories such as CAD Lab, CAM Lab, Machine shop, Mechatronics Lab, Dynamics Lab, Strength of Materials Lab, Fluid Mechanics and Machinery Lab, Metrology and Measurement Lab, Internal Combustion Engines Lab, Steam Lab, Heat Transfer Lab, Industrial Practices Lab, Research & Development Lab and ISHRAE Showcase Lab.",
+            "The department consists of Latest Software’s such as WITNESS, CREO 3, ANSYS CFD 18.0, ANSYS FEA 18.0, ANSYS 12.0, Solid edge V16.0, Autodesk Inventor Series 5.0, Edge CAM 2013 R1, AutoCAD 2017etc. Smart Class rooms and Seminar Hall. Exclusive Department Library for more than 2,000 books . For more information refer the below link https://www.klnce.edu/Departments/UG/Mech.aspx#."
+        ]
+    },
+    {
+        "tag": "Student_Achievements",
+        "patterns": [
+        "Have the students achieved anything notable?",
+        "Can you tell me about the achievements of the students?",
+        "Are there any remarkable accomplishments by the students?",
+        "Have the students received any awards or recognition?",
+        "Tell me about the achievements of the students in the department."
+        ],
+        "responses": [
+        "Students are placed in Core companies such as Delphi TVS, TVS Wheels India Ltd, TVS Sundaram Industries, TVS Brakes India Ltd, Mahindra & Mahindra Ltd, Renault Nissan, VST Motors, LOESCHE, AURO Lab, G-Plast, Shanthi Gears Ltd, Delphi TVS, Indaid Engineers, Datapattern, TCS, Infosys, CTS, ZOHO, Chainsys, Vaken Technologies etc..",
+        "Our students have participated in and won prizes in various national and international events held in other colleges.",
+        "Many of our students have successfully completed remote project mentoring programs in reputed organizations.",
+        "The department organizes symposiums, national/international conferences, project exhibitions, workshops, and seminars to provide students with technical exposure.",
+        "Received Grant-in-aids from various agencies such as AICTE, TNSCST, CSIR, IEI, Anna University Chennai for MODROBS, conducting FDP, Workshop/Seminar in the area of 3D Printing, Optimization, Heat and Mass Transfer, Teaching Methodologies in Machine Design, Research Methodology etc. For more information check the below link .https://www.klnce.edu/Departments/UG/Mech.aspx#"
+        ]
+        },
+        {
+            "tag": "ECE_Course_Accreditation",
+            "patterns":[
+                "Is the Electrical and Communication department accredited?",
+                "Has the ECE department received any accreditation?",
+                "What is the accreditation status of the ECE department?",
+                "Can you provide information about the ECE course's accreditation status?",
+                "Has the ECE course undergone the accreditation process?",
+                "Has the ECE course received accreditation?",
+                "Is the ECE course accredited?",
+                "Can you provide details about the ECE course's accreditation?",
+                "Is the ECE course accredited and approved?"
+            ],
+            "responses":[
+                "Yes, the Electrical and Communication department is accredited by NBA.",
+                "The ECE department has been accredited by NBA multiple times ",
+                "The NBA accreditation status of the ECE department is valid until now"
+            ]
+        },
+        {
+            "tag":"ECE_Infrastructure_Facilities",
+            "patterns":[
+                "What are the facilities available in the ECE department?",
+                "What are the facilities available in the Electrical and Communication department?",
+                "What labs and equipment are present in the ECE department?",
+                "What labs and facilities does the ECE department have?",
+                "What facilities are there in the ECE department?",
+                "Can you tell me about the labs and equipment available in ECE?",
+                "Tell me about the infrastructure in the ECE department"
+            ],
+            "responses":[
+                "The department consists of several laboratories, including Electronics Lab, Microprocessor Lab, Microwave Lab, VLSI and Embedded Lab,Communication System Lab, Digitial Signal Lab",
+                "The department consists of several laboratories, including Electronics Lab, Microprocessor Lab, Microwave Lab, VLSI and Embedded Lab,Communication System Lab, Digitial Signal Lab and Research and Development lab and the Laboratories are Equipped with hardware, computers and software packages such as Matlab, Xilinx, Labview and Cadence, Pspice, Ansoft and IE3D."
+        
+            ]
+        },
+        {
+            "tag":"ECE_Vision",
+            "patterns":[
+                "What is the vision of the Department of Electrical and Communication?",
+                "Can you tell me about the ECE department's vision?"  
+            ],
+            "responses":[
+                "To promote as a centre of excellence in educational and research activities related to electronics and communication engineering and its allied areas."
+            ]   
+        },
+        {
+            "tag":"ECE_Mission",
+            "patterns":[
+                "What is the mission of the Department of Electrical and Communication?",
+                "Can you tell me about the ECE department's vision?"
+            ],
+            "responses":[
+                "To create educational and research environment to meet ever changing and ever demanding needs of electronics and communication industry along with IT and other interdisciplinary fields.",
+                 "To mould the students to become ethically upright and recognized as responsible engineers."
+            ]
+        },
+        {
+            "tag": "ECE_Student_Achievements",
+            "patterns":[
+                "Have the ECE students achieved anything notable?",
+                "Can you tell me about the achievements of the ECE students?",
+                "Are there any remarkable accomplishments by the ECE students?",
+                "Have the ECE students received any awards or recognition?",
+                "Tell me about the achievements of the ECE students in the department."
+            ],
+            "responses":[
+                "Our students have excelled in their academic pursuits,And Many University Rank Holders.",
+                "Our students have participated in and won prizes in various national and international events held in other colleges.",
+                "Many of our students have successfully completed remote project mentoring programs in reputed organizations.",
+                "The department organizes symposiums, national/international conferences, project exhibitions, workshops, and seminars to provide students with technical exposure.",
+                "Students have had the opportunity to visit industry and internship in organizations like HDLC Technologies, BSNL, Tata Consultancy Services, and more, and engage in industrial projects with companies such as Great Innovus,Aspire Systems,Adept Chip"
+                ]
+        },
+        {
+            "tag":"ECE PSOs",
+            "patterns":[
+                 "What are the program-specific outcomes of the ECE department?",
+                 "Tell me about the PSOs of the ECE department.",
+                 "Tell me about the program-specific outcomes of the ECE department.",
+                 "What outcomes does the ECE department aim to achieve?",
+                 "Explain the goals of the ECE department's programs."
+            ],
+            "responses":[
+                "The department has the following program-specific outcomes (PSOs) To Create a better learning environment in line with technological advancements research progress. and To Provide industry exposure through research and consultancy in Electrical and Communication Technologies."
+            ]
+        },
+        
+{
+            "tag":"ECE_PEOs",
+            "patterns": [
+            "What are the ECE program educational objectives of the department?",
+            "Tell me about the PEOs of the ECE department.",
+            "What are the goals of the ECE department's programs?",
+            "Explain the objectives of the ECE department's programs."
+            ],
+            "responses": [
+            "The department has the following program educational objectives (PEOs) To Excel in industrial or graduate work in electrical and communication technology and multi-disciplinary environments and To Adapt to ever-changing technologies by applying engineering principles ,Practice professionalism, conforming to ethical values, teamwork, and leadership."
+            ]
+        },
+        
+        {
+            "tag":"ECE_Program Outcomes",
+            "patterns":[
+                "What are the program outcomes in the ECE department?",
+                "Can you tell me about the outcomes of the ECE program?",
+                "What skills and knowledge are covered by the ECE program outcomes?"
+            ],
+            "responses":[
+                "The ECE program outcomes (POs) include: engineering knowledge, problem analysis, design/development of solutions, investigations of complex problems, modern tool usage, societal impact assessment, environment and sustainability awareness, ethical practices, teamwork, effective communication, project management, and lifelong learning."
+            ]
+        },
+        {
+            "tag": "ai_ds_degree_program",
+            "patterns": [
+            "Tell me about B.Tech in Artificial Intelligence & Data Science",
+            "What does the AI & DS degree program offer?"
+            ],
+            "responses": [
+        
+            "The B.Tech in Artificial Intelligence & Data Science offers a comprehensive curriculum focusing on computation, algorithms, programming languages, computer hardware, and problem-solving. It prepares students to build smart machines using cutting-edge technologies and meet the increasing global demand for AI & DS professionals."
+            ]
+        },
+        {
+            "tag": "ai_ds_infrastructure",
+            "patterns": [
+                "Tell me about the infrastructure of the Artificial Intelligence and Data Science department.",
+                "Tell me about the infrastructure of the AI&DS department.",
+                "What are the facilities available in the Artificial Intelligence and Data Science department?",
+                "What are the facilities available in the AI&DS department?",
+                "Describe the infrastructure at KLNCE for Artificial Intelligence and Data Science."
+
+            ],
+            "responses": [
+            "The Department of Artificial Intelligence and Data Science at KLNCE has excellent infrastructure including advanced laboratories, modern classrooms, and a dedicated seminar hall. With a high-speed internet connection and qualified faculty, we prioritize academic and industry standards, fostering innovation and student participation in competitions."
+            ]
+        },
+        {
+            "tag": "EEE Department Establishment",
+            "patterns": [
+                "When was the department EEE established?",
+                "How did the EEE department start?",
+                "Tell me about the EEE department's beginnings."
+                ],
+                "responses": [
+                "The department of Electrical and Electronics Engineering was established in 1994.",
+                "The department started its journey in 1994 with the aim of providing quality education in  Electrical and Electronics Engineering.",
+                "In 1994, the department came into existence, laying the foundation for its contributions in the field of  Electrical and Electronics Engineering.",
+                "Since its establishment in 1994, the department has grown and become a renowned institution in the field of  Electrical and Electronics Engineering."
+                ]
+        },
+        {
+            "tag": "EEE_vision",
+            "patterns": [
+                "What is the EEE department's vision?",
+                "Tell me about the EEE department's vision."
+                ],
+            "responses": [
+                "To become a high standard of excellence in Education, Training and Research in the field of Electrical & Electronics Engineering and allied applications."
+                ]
+        },
+        {
+            "tag": "EEE_mission",
+            "patterns": [
+                "What is the EEE department's mission?",
+                "Tell me about the EEE department's mission."
+                ],
+            "responses": [
+                "To produce excellent, innovative and Nationalistic Engineers with Ethical Values and to advance in the field of Electrical & Electronics Engineering and allied areas."
+                ]
+        },
+        {  
+            "tag": "EEE_program_educational_objectives",
+            "patterns": [
+                "What are the EEE Program Educational Objectives?",
+                "Tell me about the EEE program educational objectives."
+                ],
+            "responses": [
+                "The Program Educational Objectives (PEOs) of the Electrical and Electronics Engineering to excel in industrial or graduate work in Electrical and Electronics Engineering and allied fields and practice their Professions conforming to Ethical Values and Environmentally friendly policies and adapt to evolving technologies"
+            ]
+        },
+                    {
+                    "tag": "EEE_program_specific_outcomes",
+                    "patterns": [
+                    "EEE Program specific outcomes",
+                    "Tell me about the EEE Program specific outcomes "
+                    ],
+                    "responses": [
+                    "The Program Specific Outcomes (PSOs) of Electrical and Electronics Engineering to  Apply the fundamentals of mathematics, science and engineering knowledge to identify, formulate, design and investigate complex engineering problems of electric circuits, analog and digital electronic circuits, electrical machines and power systems and Apply appropriate techniques and modern Engineering hardware and software tools in power system"
+                     ]
+                    },
+                    {
+                    "tag": "EEE_Infrastructure_Facilities",
+                    "patterns":[
+                    "What are the facilities available in the EEE department?",
+                    "What are the facilities available in the Electrical and Electronic department?",
+                    "What labs and equipment are present in the EEE department?",
+                    "What labs and facilities does the Electrical and Electronic department have?",
+                    "What facilities are there in the EEE department?",
+                    "Can you tell me about the labs and equipment available in Electrical and Electronic department?",
+                    "Tell me about the infrastructure in the EEE department"
+                    ],
+                    "responses":[
+                    "The department consists of Well Equipped Laboratories such as Electrical Machines Lab,Control System, Measurements & Instrumentation Lab, Power Electronics Lab, Electric Circuits Lab, Microprocessor & Microcontroller Lab and smart classrooms",
+                    "The department consists of Well Equipped Laboratories such as Electrical Machines Lab,Control System, Measurements & Instrumentation Lab, Power Electronics Lab, Electric Circuits Lab, Microprocessor & Microcontroller lab,Research & Development, Project Lab,Department library with more than 2000 books"
+                    ]
+                    },
+                    {
+                    "tag": "EEE placement_details",
+                    "patterns": [
+                    "Tell me about the EEE placement details",
+                    "What are the EEE placement statistics?",
+                    "Can you provide information on EEE placements?"
+                    ],
+                    "responses": [
+                    "The placement details for the Electrical and Electronic Engineering Department in recent years are as follows: From 2004 to 2022, more than 750 final year students were placed in companies or government sectors,and some  students opting for higher studies and none becoming entrepreneurs. These statistics reflect the department's commitment to facilitating successful career opportunities and academic pursuits for its students and some students are appeared and qualified  in GATE and TANCET exams."
+                    ]
+                    },
+                    {
+                        "tag": "EEE_Student_Achievements",
+                        "patterns": [
+                        "Have the EEE students achieved anything notable?",
+                        "Can you tell me about the achievements of the EEE students?",
+                        "Are there any remarkable accomplishments by the EEE students?",
+                        "Have the EEE students received any awards or recognition?",
+                        "Tell me about the achievements of the EEe students in the department."
+                        ],
+                        "responses": [
+                        "Our students have excelled in their academic pursuits, with 109 University Rank Holders.",
+                        "Our students have participated in and won prizes in various national and international events held in other colleges.",
+                        "Many of our students have successfully completed remote project mentoring programs in reputed organizations.",
+                        "The department organizes symposiums, national/international conferences, project exhibitions, workshops, and seminars to provide students with technical exposure.",
+                        "Students have had the opportunity to visit industry organizations like ISRO, BSNL, Tata Consultancy Services, and more, and engage in industrial projects with companies such as Aspire Systems,Great Innovus Solution."
+                        ]    
+                    },
+                    {
+                        "tag":"SPORTS",
+                        "patterns":[
+                            "sports?",
+                        "what are the sports available in KLNCE?",
+                        "What sports does your college offer?",
+                        "Can you provide a list of the sports available at your college?",
+                        "Which sports are available for students to participate in at your college?",
+                        "What are the sports options provided by your college?",
+                        "Could you please elaborate on the sports programs and activities available at your college?"
+                        ],
+                        "responses":[
+                            "Our college has a very good Football field, Cricket circle, Ball badminton court(2 Nos.) and Volleyball court(3 Nos.), indoor badminton court(2 Nos.), Hand Ball court, A 400 mts. Standard Track, Long jump pit and High jump pit are available. A separate recreation room is available for carom, chess and table tennis."
+                        ]
+                        },
+                        {
+                        "tag":"HOSTAL_FACILITIES",
+                        "patterns":[
+                            "hostel?",
+                            "hostel facilities",
+                        "What hostel facilities does your college provide?",
+                        "Can you provide details about the hostel amenities available at your college?",
+                        "What are the accommodation options and services offered by your college's hostel?",
+                        "Could you please describe the hostel facilities and amenities available for students at your college for both boys and girls?",
+                        "What are the hostal facilities offered to students of both genders at your college?",
+                        "What are the available hostel facilities provided separately for boys and girls at your college?"
+                        ],
+                        "responses":[
+                        "There are four separate blocks located inside the campus for Men’s hostel students accommodating about 900 students and accomadate 110 girl students with spacious dining halls ",
+                        "We provide seperate hostal facilities for both boys and girls inside the collage campus"
+                         ]
+                        },
+                        {
+                        "tag":  "TRANSPORT_FACILITIES",
+                        "patterns":[
+                            "transport?",
+                            "transport facilites?",
+                        "Does your college offer transportation for students to get to campus?",
+                        "Are there any transportation services provided by the college for commuting?",
+                        "Can students use transportation facilities provided by the college to reach campus?",
+                        "Does the college have any transportation options available for students?",
+                        "Are there any ways for students to travel to the college using transportation provided by the institution?" 
+                        ],
+                        "responses":[
+                        "There are Forty buses & One mini bus plying through different routes for the use of staff and students",
+                        "Yes, our college provides transportation services for students to commute to campus. We have dedicated buses that operate on different routes covering various residential areas. The buses are well maintained and equipped with comfortable seating, ensuring a pleasant and convenient journey for students."    
+                        ]
+                        }
+]} 

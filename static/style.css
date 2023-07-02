@@ -58,9 +58,11 @@ body {
 .send__button {
     padding: 6px;
     background: transparent;
-    border: none;
+    border: darkblue;
     outline: none;
     cursor: pointer;
+    color: black;
+
 }
 
 
@@ -77,7 +79,23 @@ body {
     display: flex;
     overflow-y: scroll;
     flex-direction: column-reverse;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
 }
+
+.chatbox__messages::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.chatbox__messages::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+  
+.chatbox__messages::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
 
 .messages__item {
     background: orange;
@@ -196,10 +214,10 @@ body {
 }
 
 .chatbox__send--footer {
-    color: white;
+    color: black;
 }
 
-.chatbox__button button,
+/* .chatbox__button button, */
 .chatbox__button button:focus,
 .chatbox__button button:visited {
     padding: 10px;
@@ -212,3 +230,15 @@ body {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
+.chatbox__button img {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    right: 20px; /* Adjust the distance from the right as needed */
+    z-index: 1000;
+    border: 0px;
+    cursor: pointer;
+}
+

@@ -7,6 +7,7 @@ class Chatbox {
         }
 
         this.state = false;
+        this.stored = false;
         this.messages = [];
     }
 
@@ -33,7 +34,11 @@ class Chatbox {
             chatbox.classList.add('chatbox--active')
             if(!this.hasuserinfo())
             {
-                this.askName(chatbox);
+                if(this.stored === false){
+                    this.askName(chatbox);
+                    this.stored = true
+                }
+                
             }
         } else {
             chatbox.classList.remove('chatbox--active')
