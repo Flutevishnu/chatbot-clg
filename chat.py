@@ -6,6 +6,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
@@ -27,6 +28,8 @@ model.eval()
 
 bot_name = "KLNCE"
 
+
+
 def get_response(msg):
      
     sentence = tokenize(msg)
@@ -41,12 +44,16 @@ def get_response(msg):
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.5:
+    if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
                 return random.choice(intent["responses"])
     else:
         return "I don't understand...."
+    
+
+
+
     
 
 
